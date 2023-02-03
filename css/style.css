@@ -1,0 +1,244 @@
+/*author:akhila
+date:02/02/23*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 100;
+}
+.banner{
+    background-image: url(../image/academy-banner.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; 
+    padding-right: 10%;
+    font-size: 30px;
+    text-align: right;
+}
+.banner_head{
+    width: 50%;
+    margin-top: 2%;
+    color: #1e2531
+}
+/*banner*/
+.php_programing{
+    /* height: 100vh;  */
+    display: flex;
+    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+.php_programing_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.php_image{
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.php_details{
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 2%;
+    margin-left: -2;
+    background-color: #1e2531;
+}
+.php_details h3{
+    font-size: 25px;
+	color: #5b8fb9;
+	margin-bottom: 3%;
+}
+h3::before{
+    content: "{";
+        color: #f00;
+}
+h3::after{
+    content: "}";
+        color: #f00;
+}
+.php_content_para{
+
+    padding: 2%;
+    text-align: center;
+    width: 75%;
+    margin: auto;  
+    margin-top: 2px;
+    font-size: 15px; 
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: 100; */
+    color: #252525; 
+    line-height: 20px;
+}
+/*php programing*/
+.courses{
+    background-image: url(../image/modulebg.jpg);
+    height: 100vh;  
+    background-size: cover; 
+}
+.course_details{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.course_details div{
+    width: 20%;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    border-radius: 10%;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    padding: 2%;
+}
+/*Course details*/
+.candidate{
+    height: 100vh;  
+    margin-top: 3%; 
+}
+.candidate_para{
+    width: 70%;
+    margin: auto;
+    font-size: large;
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: 100; */
+    text-align: center;
+}
+.image_container{
+   display: flex; 
+   flex-wrap: wrap;
+   margin-top: 5%;
+}
+.imag_test{
+    width: 50%;
+    height: 60vh;
+    background-image: url(../image/testsbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imag_intervw{
+    width: 50%;
+    height: 60vh;
+    background-image: url(../image/intrvwbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.align_imag{
+    width: 90%;
+    height: 85%;
+    margin: 5%;
+    background-color: rgba(6,8,11,.7);
+    color: #ffffff;
+    font-size: x-large;
+    line-height: 30px;
+    padding: 20%;
+}
+/*candidate*/
+.join_details{
+    width: 50%;
+    margin: auto;
+}
+.join_details h1{
+    text-align: center;
+	color: #181e22;
+	font-size: 45px;
+}
+.join_button{    
+    padding: 2%;
+	border: 2px solid #f26422;
+	width: 20%;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+}
+.join_button a{
+    color: #f26422;
+	text-decoration: none;
+	font-size: larger;
+	font-weight: bold;     
+}
+.academy_details{
+    display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+.academy_details div{
+    margin-bottom: 10%;
+	margin-top: 5%;
+}
+.office{
+    width: 45%;
+	padding: 2%; 
+}
+.office h2{
+    align-items: center;
+}
+/* END */
+@media screen and (max-width:576px){
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        min-width: 0;
+    }
+    .banner{
+        background-image: none;
+        background-color: #ccc;
+        width: 100%;     
+    }
+    .php_details{
+        position: static;
+        left: 0;
+        width:100%;
+        font-size: 15px;
+    }
+    .php_image {
+		margin-left: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+    .course_details{
+        height: fit-content;
+    }
+    .course_details div{
+        width: 40%;
+    }
+    .image_container{
+        display: flex;
+		flex-direction: column;
+    }
+    .imag_test{
+        width: 100%;
+    }
+    .imag_intervw{
+        width: 100%;
+    }
+    .join_details{
+        margin-top: 100%;
+    }
+    .join_button{
+        width: 50%;
+    }
+    .office{
+        width: 50%;
+		font-size: small;
+    }
+}
