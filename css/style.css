@@ -11,12 +11,13 @@ date:02/02/23*/
 .banner{
     background-image: url(../image/academy-banner.jpg);
     width: 100%;
+    /* width: fit-content; */
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-end; 
     justify-content: center; 
-    padding-right: 10%;
+    /* padding-right: 10%; */
     font-size: 30px;
     text-align: right;
 }
@@ -27,10 +28,10 @@ date:02/02/23*/
 }
 /*banner*/
 .php_programing{
-    /* height: 100vh;  */
+   
     display: flex;
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .php_programing_content{
@@ -151,6 +152,7 @@ h3::after{
 }
 /*candidate*/
 .join_details{
+    height: 100vh;
     width: 50%;
     margin: auto;
 }
@@ -197,12 +199,15 @@ h3::after{
         box-sizing: border-box;
     }
     .container{
+        /* width: 100%; */
         min-width: 0;
+        width: fit-content;   
     }
     .banner{
         background-image: none;
         background-color: #ccc;
-        width: 100%;     
+        /* width: 100%;  */
+     
     }
     .php_details{
         position: static;
@@ -232,7 +237,7 @@ h3::after{
         width: 100%;
     }
     .join_details{
-        margin-top: 100%;
+        margin-top: 50%;
     }
     .join_button{
         width: 50%;
